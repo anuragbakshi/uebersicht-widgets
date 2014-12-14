@@ -37,5 +37,13 @@ ip=$(networksetup -getinfo wi-fi | grep -Ei '(^IP address:)' | awk '{print $3}')
 mac=$(networksetup -getinfo wi-fi | grep -Ei '(^Wi-Fi ID:)' | awk '{print $3}')
 exportService "wi-fi"
 
+# Place a comma between services.
+echo '  ,'
+
+# Output the Internet information.
+ip=$(curl -s icanhazip.com)
+mac=''
+exportService "internet"
+
 # End the JSON
 endJSON

@@ -1,14 +1,3 @@
-#--------------------------------------------------------------------------------------
-# Please Read
-#--------------------------------------------------------------------------------------
-# The images used in this widget are from the Noun Project (http://thenounproject.com).
-#
-# They were created by the following individuals:
-#   Ethernet by Michael Anthony from The Noun Project
-#   Wireless by Piotrek Chuchla from The Noun Project
-#
-#--------------------------------------------------------------------------------------
-
 # Execute the shell command.
 command: "NetworkInfo.widget/NetworkInfo.sh"
 
@@ -55,7 +44,7 @@ style: """
   margin:0
   padding:0px
   left:10px
-  top: 10px
+  top: 100px
   background:rgba(#000, .25)
   border:1px solid rgba(#000, .25)
   border-radius:10px
